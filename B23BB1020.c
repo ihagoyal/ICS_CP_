@@ -10,7 +10,7 @@ double linearSystem_eq();
 
 int main() {
     char name;
-    printf("Welcome to maths equation solver");
+    printf("Welcome to maths equation solver\n");
     printf("Enter your name:");
     scanf("%s",&name);
     int mCond;
