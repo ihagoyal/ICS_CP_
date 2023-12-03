@@ -11,9 +11,7 @@ coefficients a,b and c
 provides coefficients a,b,c.
 4. Linear System Solver: solves a system of two linear equations (2*2) of the form a1x+b1y=c1 and
 a2x+b2y=c2. 
-5. Graph Plotting: Allows the user to plot graphs of linear, quadratic, and exponential functions 
-using a simple ASCII art representation. The user can choose the function to plot and set the 
-range for the x-axis.
+5. Cubic Equation Solver: Solves cubic equation of the form ax**3+bx**2+cx+d
 Menu Driven Interface:The program presents a main menu where the user can choose to solve 
 equations, plot graphs, or exit the program. Sub-menus are provided for equation solving and 
 graph plotting.
@@ -54,6 +52,5 @@ The exponential function allows the user to input coefficients for an exponentia
 The linearSystem function allows the user to input coefficients for a system of linear equations 
 (2x2) and then solves and displays the solution.
 This code creates an interactive program that allows users to solve linear, quadratic, and 
-exponential equations, as well as systems of linear equations. Users can also plot graphs of 
-different mathematical functions. The code is structured with modular functions for better 
+exponential equations, as well as systems of linear equations.  The code is structured with modular functions for better 
 organization and readability.
