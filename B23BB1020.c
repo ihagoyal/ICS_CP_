@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
-
+#include<string.h>
 double linear_eq();
 double quadratic_eq();
 double cubic_eq();
@@ -9,14 +8,16 @@ double exponential_eq();
 double linearSystem_eq();
 
 int main() {
-    char name;
-    printf("Welcome to maths equation solver\n");
+    
+    char name[550];
     printf("Enter your name:");
     scanf("%s",&name);
+    printf("Welcome to maths equation solver %s\n",name);
+    
     int mCond;
-
     do {
-        printf("\nLets start with the equation solver %s\n",name);
+        
+        
         printf("1. Solve Equations\n");
         printf("2. Exit the program\n");
         printf("Enter your choice (1 or 2): ");
