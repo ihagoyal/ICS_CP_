@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-string name;
-printf("Welcome to maths equation solver");
-printf("Enter your name:");
-scanf("%s",&name);
+
 
 double linear_eq();
 double quadratic_eq();
@@ -12,6 +9,10 @@ double exponential_eq();
 double linearSystem_eq();
 
 int main() {
+    char name;
+    printf("Welcome to maths equation solver");
+    printf("Enter your name:");
+    scanf("%s",&name);
     int mCond;
 
     do {
