@@ -1,7 +1,6 @@
 EQUATION SOLVER
 This program provides a simple interactive menu-driven interface for solving various types of
-mathematical equations. It's well-structured and allows the user to choose the type of equation 
-they want to solve. The equation-solving functions handle different cases and provide solutions
+mathematical equations. The equation-solving functions handle different cases and provide solutions
 based on user input.
 The code begins by including necessary header files, such as <stdio.h> for input and output 
 functions and <math.h> for mathematical functions.
@@ -39,5 +38,4 @@ Calculates the solution using logarithms.
 Solves a system of two linear equations (a1x+b1y=c1 and a2x+b2y=c2) using using Cramer's rule.
 Takes input for coefficients of both equations.
 Checks for the determinant to determine if the system has a unique solution.
-This program provides a simple interactive menu-driven interface for solving various types of 
-mathematical equations.
+This program is user interactive as well as user friendly.
