@@ -1,1 +1,59 @@
-Project
+EQUATION SOLVER
+simple command-line program written in C that functions as a math equation solver and graph plotter. 
+It offers a menu-driven interface, allowing users to choose between solving various types of equations (linear, quadratic, exponential, and linear systems) 
+or plotting the graphs of selected functions.
+Here's an overview of the program's main functionalities:
+1. Linear Equation Solver: Solves equation of the form ax+b=0, where the user provides coefficients
+a and b
+2. Quadratic Equation solver: Solves quadratic equation of the form ax**2+bx+c=0, where the user provides 
+coefficients a,b and c
+3. Exponential equation solver: solves exponential equation of the form a. exp(b.x)=c, where user
+provides coefficients a,b,c.
+4. Linear System Solver: solves a system of two linear equations (2*2) of the form a1x+b1y=c1 and
+a2x+b2y=c2. 
+5. Graph Plotting: Allows the user to plot graphs of linear, quadratic, and exponential functions 
+using a simple ASCII art representation. The user can choose the function to plot and set the 
+range for the x-axis.
+Menu Driven Interface:The program presents a main menu where the user can choose to solve 
+equations, plot graphs, or exit the program. Sub-menus are provided for equation solving and 
+graph plotting.
+The program is structured with a do-while loop, allowing users to perform multiple operations 
+within the same program run. The loop continues until the user chooses to exit. 
+The code is organized into modular functions for each type of equation solving and graph plotting. 
+This enhances code readability, maintainability, and reusability.
+While the code assumes valid numerical input from the user, real-world applications would 
+typically include additional input validation to handle unexpected inputs gracefully.
+It's important to note that the graph plotting functionality is limited to a basic ASCII
+representation and may not be suitable for highly accurate or complex visualizations. 
+EXPLAINING THE CODE:
+The code starts by including the necessary header files: stdio.h for standard input/output 
+functions and math.h for mathematical functions.
+Function prototypes are declared for various mathematical operations and features. 
+These prototypes inform the compiler about the functions that will be defined later in the code.
+The main function begins with a do-while loop, creating a simple menu-driven interface. 
+The user can choose between solving equations, plotting graphs, or exiting the program.
+If the user chooses to solve equations (mainQuery == 1), a sub-menu is displayed for 
+different types of equations (linear, quadratic, exponential, or linear system). 
+The user is prompted to select an option.
+Inside the equation solving menu, another switch statement handles the specific type of 
+equation chosen by the user. The corresponding function (e.g., linear(), quadratic()) is called.
+If the user chooses to plot graphs (mainQuery == 2), a sub-menu for graph plotting is displayed.
+The user can select options to plot linear, quadratic, or exponential functions
+Inside the graph plotting menu, another switch statement handles the specific type of graph 
+chosen by the user. The plotGraph function is called with the chosen function and specific 
+plotting parameters.
+If the user chooses to exit (mainQuery == 3), a message is displayed, and the program exits.
+The switch statement handles the main menu options. If the user enters an invalid choice,
+a message is displayed, and the loop continues.
+The do-while loop continues until the user chooses to exit (mainQuery == 3).
+The linear function allows the user to input coefficients for a linear equation and then solves and
+displays the solution.
+The quadratic function allows the user to input coefficients for a quadratic equation and then solves and displays the solutions.
+It considers different cases based on the discriminant
+The exponential function allows the user to input coefficients for an exponential equation and then solves and displays the solution.
+The linearSystem function allows the user to input coefficients for a system of linear equations 
+(2x2) and then solves and displays the solution.
+This code creates an interactive program that allows users to solve linear, quadratic, and 
+exponential equations, as well as systems of linear equations. Users can also plot graphs of 
+different mathematical functions. The code is structured with modular functions for better 
+organization and readability.
