@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include<string.h>
 double linear_eq();
 double quadratic_eq();
 double cubic_eq();
